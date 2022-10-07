@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Application</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Library application">
+    <meta name="author" content="Marcin Tlon">
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-book"></i>
+        <h1 class="title">Library Application</h1>
+        <button id="logout" onclick="goToHome()">Logout</button>
+        <div class="search">
+            <div class="search-item">
+                <label for="title">Title: </label>
+                <input type="text" id="title" name="title" />
+                <i class="fa fa-search" onclick="searchTitle()"></i>
+            </div>
+            <div class="search-item">
+                <label for="author">Author: </label>
+                <input type="text" id="author" name="author" />
+                <i class="fa fa-search" onclick="searchAuthor()"></i>
+            </div>
+            <div class="search-item">
+                <label for="year">Year: </label>
+                <input type="text" class="form-control" name="year" id="datepicker" />
+                <i class="fa fa-search" onclick="searchYear()"></i>
+            </div>
+            <div class="search-item">
+                <button onclick="showAllBooks()">Show all books</button>
+            </div>
+        </div>
+        <div class="content-books">
+            <h3 id="error-message"></h3>
+            <ol id="book-list"></ol>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/script-books.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
+</html>

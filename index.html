@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Application</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Library application">
+    <meta name="author" content="Marcin Tlon">
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-book"></i>
+        <h1 class="title">Library Application</h1>
+        <div class="content">
+            <form method="post" onsubmit="return false;">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" required/><br />
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required/><br />
+                <div class="form-buttons">
+                    <button type="submit" onclick="loginHandler()">Login</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form> 
+        </div>
+        <h3 id="error-message"></h3>
+    </div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
