@@ -1,6 +1,8 @@
 # Library Application (Front-end)
+Backend to [Library Application](https://github.com/mtlon/libraryApplicationAPI)
 
 ## Technologies
+Project is created with:
  - HTML
  - CSS
  - JavaScript
@@ -11,6 +13,7 @@ To run this application, you will need:
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## Setup
+- Download ZIP with code
 - Open the `Front` folder in Visual Studio Code.
 - Install the `Live Server` extension in Visual Studio Code.
 - Click on the `Go Live` button in the bottom right corner of Visual Studio Code to start the server on `port 5500`.
